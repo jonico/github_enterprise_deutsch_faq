@@ -30,11 +30,13 @@ GitHub empfiehlt den Betrieb möglichst aller Software-Projekte auf einer Instan
 
 * Ich welcher Granularität gibt es bei Github Enterprise neue Versionen? (Einzelfeatures oder Gesamtsystem)
 
-Typischerweise steht alle 3 Monate ein neues Major-Release von GitHub Enterprise zur Verfügung, welche alle neuen Funktionalitäten, die in der Zwischenzeit auf GitHub.com released wurden enthält.Beispielsweise wird GitHub Enterprise 2.8, grundlegende neue Features im Bereich [Code Reviews](https://www.youtube.com/watch?v=HW0RPaJqm4g), [Projekt-Management](https://www.youtube.com/watch?v=C6MGKHkNtxU), [Profile-Timeline](https://www.youtube.com/watch?v=6ECfLU5vC7I) und [vielem mehr](https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features) enthalten. 
+Typischerweise steht alle 3 Monate ein neues Major-Release von GitHub Enterprise zur Verfügung, welche alle neuen Funktionalitäten, die in der Zwischenzeit auf GitHub.com released wurden enthält.
+Beispielsweise wird GitHub Enterprise 2.8, grundlegende neue Features im Bereich [Code Reviews](https://www.youtube.com/watch?v=HW0RPaJqm4g), [Projekt-Management](https://www.youtube.com/watch?v=C6MGKHkNtxU), [Profile-Timeline](https://www.youtube.com/watch?v=6ECfLU5vC7I) und [vielem mehr](https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features) enthalten. 
 
 Bugfixes und nicht sicherheitskritische Updates werden in Form von einem Minor-Release pro zwei bis vier Wochen zur Verfügung gestellt. Sicherheitskritische Hotfixes werden sofort zur Verfügung gestellt. Die Verfügbarkeit von Updates kann bei bestehender Internetverbindung [automatisch](https://help.github.com/enterprise/2.6/admin/guides/installation/enabling-automatic-update-checks/), oder über unsere[ ](https://help.github.com/enterprise/2.6/admin/guides/installation/enabling-automatic-update-checks/)
 
-Web-Oberfläche geprüft werden. Ein Upgrade bezieht sich dabei immer auf das Gesamtsystem und ist innerhalb weniger Minuten abgeschlossen.Anbei ein [Überblick über die Sicherheit von GitHub Enterprise](https://enterprise.github.com/security), sowie unser [Bug Bounty Programm](https://bounty.github.com/index.html#home).
+Web-Oberfläche geprüft werden. Ein Upgrade bezieht sich dabei immer auf das Gesamtsystem und ist innerhalb weniger Minuten abgeschlossen.
+Anbei ein [Überblick über die Sicherheit von GitHub Enterprise](https://enterprise.github.com/security), sowie unser [Bug Bounty Programm](https://bounty.github.com/index.html#home).
 
 Rollen & Rechte
 
@@ -106,7 +108,7 @@ Infrastruktur
 
 ![image alt text](image_1.png)
 
-Die Warm-Standby-Instanz, welche bei einem DNS-Failover genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
+Die Warm-Standby-Instanz, welche bei einem DNS- oder Loadbalancer-Failover genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
 
 * Wo liegen im Cloud-Ansatz die Daten des Repos?
 
