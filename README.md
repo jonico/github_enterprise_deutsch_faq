@@ -108,7 +108,7 @@ Infrastruktur
 
 ![image alt text](image_1.png)
 
-Die Warm-Standby-Instanz, welche bei einem DNS- oder Loadbalancer-Failover genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
+Die Warm-Standby-Instanz, welche bei einem DNS- oder [Loadbalancer-Failover](https://help.github.com/enterprise/2.9/admin/guides/clustering/network-configuration/#configuring-a-load-balancer) genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
 
 * Wo liegen im Cloud-Ansatz die Daten des Repos?
 
