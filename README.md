@@ -80,7 +80,7 @@ Gerne beantworten wir Ihre spezifischen Review- und Workflow-Fragen auch mit ein
 
 * Wie stellt sich die Kopplung von Reviews und Jira-Ticket dar?
 
-Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. So wurde [Git LFS](https://git-lfs.github.com/) gemeinsam von beiden Unternehmen designed, implementiert und weiterhin vorangetrieben. Weiterhin besteht eine [Jira-Integration](https://github.com/integrations/jira-software) zu GitHub. Diese ermöglicht es
+Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. So wurde [Git LFS](https://git-lfs.github.com/) gemeinsam von beiden Unternehmen designed, implementiert und weiterhin vorangetrieben. Weiterhin besteht eine [Jira-Integration](https://help.github.com/en/enterprise/2.17/admin/developer-workflow/managing-projects-using-jira) zu GitHub. Diese ermöglicht es
 
 * Von Jira aus alle mit Jira-Issues assoziierten GitHub-Branches und Reviews (Pull-Requests) sowie deren Status, Kommentare und Diskussionsteilnehmer zu sehen.
 
