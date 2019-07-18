@@ -46,13 +46,13 @@ GitHub Enterprise bietet Lese-, Schreib- und Administrations-Rechte auf [Branch-
 
 Einen Überblick über die Konzepte finden Sie in diesem [Video](https://vimeo.com/179075921/a774e76f4f).
 
-* Welche Basissystem der Unternehmen können angebunden? (LDAP, Crowd, …)
+* Welche Basissystem der Unternehmen können angebunden? (LDAP, Crowd, SAML)
 
-GitHub Enterprise unterstützt [SAML](https://help.github.com/enterprise/admin/guides/user-management/using-saml/) (Siteminder), [CAS](https://help.github.com/enterprise/2.7/admin/guides/user-management/using-cas/)[ ](https://help.github.com/enterprise/2.7/admin/guides/user-management/using-cas/)und [LDAP](https://help.github.com/enterprise/2.7/admin/guides/user-management/using-ldap/) als Identitätsprovider.  Für eine Schritt- für-Schritt-Anleitung für die Synchronisation zwischen LDAP und GitHub Enterprise, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4).
+GitHub Enterprise unterstützt [SAML](https://help.github.com/enterprise/admin/guides/user-management/using-saml/), [CAS](https://help.github.com/enterprise/2.17/admin/guides/user-management/using-cas/)und [LDAP](https://help.github.com/enterprise/2.17/admin/guides/user-management/using-ldap/) als Identitätsprovider.  Für eine Schritt- für-Schritt-Anleitung für die Synchronisation zwischen LDAP und GitHub Enterprise, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4).
 
 * Level der Rechte gibt es bei ihnen in Bezug auf administrativen Aufgaben (Repo anlegen, User berechtigen) und fachlichen Tätigkeiten?
 
-Einen Überblick über die Bedeutung unserer Zugriffsrechte auf Organisationsebene finden Sie [hier](https://help.github.com/articles/repository-permission-levels-for-an-organization/). Weiterhin existiert eine [Site-Admin-Weboberfläche](https://help.github.com/enterprise/2.7/admin/articles/site-admin-dashboard/) für Einstellungen, die die gesamte Instanz betreffen ([maximale Dateigrößen](https://help.github.com/enterprise/2.7/admin/articles/setting-git-push-limits/), [globale Pre-receive-Hooks](https://help.github.com/enterprise/2.7/admin/guides/developer-workflow/managing-pre-receive-hooks-on-the-github-enterprise-appliance/), das Recht, [neue Organisationen zu erstellen](https://help.github.com/enterprise/2.7/admin/guides/user-management/preventing-users-from-creating-organizations/), etc).
+Einen Überblick über die Bedeutung unserer Zugriffsrechte auf Organisationsebene finden Sie [hier](https://help.github.com/articles/repository-permission-levels-for-an-organization/). Weiterhin existiert eine [Site-Admin-Weboberfläche](https://help.github.com/enterprise/2.17/admin/articles/site-admin-dashboard/) für Einstellungen, die die gesamte Instanz betreffen ([maximale Dateigrößen](https://help.github.com/enterprise/2.7/admin/articles/setting-git-push-limits/), [globale Pre-receive-Hooks](https://help.github.com/enterprise/2.17/admin/guides/developer-workflow/managing-pre-receive-hooks-on-the-github-enterprise-appliance/), das Recht, [neue Organisationen zu erstellen](https://help.github.com/enterprise/2.17/admin/guides/user-management/preventing-users-from-creating-organizations/), etc).
 
 Für fachliche Tätigkeiten, insbesondere für die projektspezifische Entscheidung, wann ein Feature /Pull Request qualitativ gut genug ist, in die Produktion übernommen zu werden, dienen GitHub’s Protected Branches mit [Required Status Checks](https://github.com/blog/2051-protected-branches-and-required-status-checks). Einen sehr guten Überblick zu fachspezifischen Quality-Gates liefert dieses [Video](https://vimeo.com/183360439/e1cd516159).
 
@@ -88,7 +88,7 @@ Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. 
 
 * Zusätzlich gibt es ein kostenfreies Chrome-Plugin [Jirafy](https://chrome.google.com/webstore/detail/jirafy/npldkpkhkmpnfhpmeoahhakbgcldplbj?hl=en) welches es ermöglicht, sämtlichen Jira-Referenzen in GitHub-Reviews, Commits, Dokumentation, Releases und Wikis zu folgen
 
-Alle drei Punkte zusammen führen zu einer bidirektionalen Integration der beiden Systeme ineinander. Für einen Überblick über die Funktionalitäten und die Konfiguration der Jira-Integration, steht Ihnen [dieses Video](https://vimeo.com/100550865) zur Verfügung. Weiterhin demonstrieren wir Ihnen die Funktionalitäten gerne vor Ort.
+Alle drei Punkte zusammen führen zu einer bidirektionalen Integration der beiden Systeme ineinander. Für einen Überblick über die Funktionalitäten und die Konfiguration der Jira-Integration, steht Ihnen [dieses Video](https://vimeo.com/100550865) zur Verfügung. 
 
 * Wie kann aus externen Tools auf Reviewergebnisse zugegriffen werden? (REST)
 
