@@ -1,4 +1,4 @@
-# GitHub Enterprise FAQ
+# GitHub Enterprise FAQ - Deutsch
 
 Allgemein
 
