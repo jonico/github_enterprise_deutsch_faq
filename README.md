@@ -1,6 +1,6 @@
 # GitHub Enterprise FAQ - Deutsch
 
-Allgemein
+## Allgemein
 
 * Wie unterstützen sie eine Migration von SVN?
 
@@ -38,7 +38,7 @@ Bugfixes und nicht sicherheitskritische Updates werden in Form von einem Minor-R
 Web-Oberfläche geprüft werden. Ein Upgrade bezieht sich dabei immer auf das Gesamtsystem und ist innerhalb weniger Minuten abgeschlossen.
 Anbei ein [Überblick über die Sicherheit von GitHub Enterprise](https://enterprise.github.com/security), sowie unser [Bug Bounty Programm](https://bounty.github.com/index.html#home).
 
-Rollen & Rechte
+## Rollen & Rechte
 
 * Wie funktioniert ihr Rollen- und Rechtekonzept?
 
@@ -56,7 +56,7 @@ Einen Überblick über die Bedeutung unserer Zugriffsrechte auf Organisationsebe
 
 Für fachliche Tätigkeiten, insbesondere für die projektspezifische Entscheidung, wann ein Feature /Pull Request qualitativ gut genug ist, in die Produktion übernommen zu werden, dienen GitHub’s Protected Branches mit [Required Status Checks](https://github.com/blog/2051-protected-branches-and-required-status-checks). Einen sehr guten Überblick zu fachspezifischen Quality-Gates liefert dieses [Video](https://vimeo.com/183360439/e1cd516159).
 
-Betriebsmodelle
+## Betriebsmodelle
 
 * Wie arbeiten sie mit ihrem Support mit Unternehmens-Supportmodellen zusammen? (ITIL?)
 
@@ -68,7 +68,7 @@ GitHub bietet ein [ticket-basiertes](https://enterprise.github.com/support) Supp
 
 Da GitHub als [Virtual Appliance](https://enterprise.github.com/faq#faq-4) geliefert wird und sämtliche Komponenten vorkonfiguriert mit sich bringt, sowie keine externen Abhängigkeiten zu Datenbanken oder anderen Diensten hat, schätzen wir den Administrationsaufwand auf 0,15 FTE pro Monat pro 2000 Nutzern ein. Updates können innerhalb weniger Minuten eingespielt werden, [Disaster Recovery](https://help.github.com/enterprise/admin/guides/installation/backups-and-disaster-recovery) und [High Availability](https://help.github.com/enterprise/admin/guides/installation/high-availability-configuration) sind ebenfalls je in unter einer Stunde konfiguriert. Weiterhin steht Ihnen jederzeit unser technischer Support, welcher aus hochspezialisierten Ingenieuren in Ihrer Zeitzone besteht, zur Verfügung.
 
-Fachliche Aspekte
+## Fachliche Aspekte
 
 * Wie funktionieren Pre- und Post-Commit Reviews?
 
@@ -100,7 +100,7 @@ Sämtliche Daten innerhalb der GitHub-Plattform stehen Ihnen über unsere [REST-
 
 GitHub Enterprise erlaubt es, beliebig viele und beliebig große Git LFS-Dateien zur verwalten. Git LFS kann individuell pro [Repository](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-a-repository/) sowie auf [Instanz-](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-your-appliance/) oder [Organisationsebene](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-every-repository-owned-by-a-user-account-or-organization/) konfiguriert werden. Bei Bedarf kann auch ein Drittanbieter wie [Artifactory](https://www.jfrog.com/confluence/display/RTF/Git+LFS+Repositories) zur Speicherung von großen Binärdateien [konfiguriert](https://help.github.com/enterprise/2.7/admin/guides/installation/git-large-file-storage-on-github-enterprise/#configuring-git-lfs-to-use-a-third-party-server) werden. Bei der Benutzung von Artefakt-Repositories ist es weiterhin möglich, die darin enthaltenen Komponenten einer Lizenz- und Sicherheitsprüfung zu unterziehen sowie das Resultat in den Pull-Request zurückzumelden, weitere Informationen finden Sie [hier](https://github.com/integrations/feature/dependency-management). 
 
-Infrastruktur
+## Infrastruktur
 
 * Hochverfügbarkeit
 
@@ -138,7 +138,7 @@ Eine einzelne virtuelle Maschine kann mit den Standardeinstellungen bis zu 5000 
 
 Über 5000 Nutzer hinaus unterstützt GitHub Enterprise [Clustering](https://help.github.com/enterprise/2.7/admin/guides/clustering/) für alle Systemkomponenten (Git, Web interface, pages, search). Clustering ist mit den Standardlizenzkosten bereits abgegolten und kann dann konfiguriert werden, wenn die tatsächliche Notwendigkeit entsteht (keine Vorabplanung bei der initialen Installation nötig).
 
-Integration in Unternehmens-Infrastruktur
+## Integration in Unternehmens-Infrastruktur
 
 * Wie erfolgt die Qualitätssicherung neuer Releases im Unternehmensumfeld beim Kunden?
 
