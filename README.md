@@ -172,3 +172,11 @@ GitHub Actions unterstützt sogenannte ['selfhosted runner'](https://help.github
 * Welche Software befindet sich auf den von GitHub angebotenen Agenten.
 
 Die [GitHub Actions Dokumentation](https://help.github.com/en/actions) führt eine Liste über die verwendete [Hardware](https://help.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners) als auch [Software](https://help.github.com/en/actions/reference/software-installed-on-github-hosted-runners) auf. Sie können auch eigene Tools installieren während der Ausführung einer Actions Pipeline. Auch gibt es die Möglichkeit [weitere Tools vorzuschlagen](https://github.com/actions/virtual-environments), die Teil der Umgebung des Agent werden sollen.
+
+* Wieviel kostet GitHub Actions/ GitHub Package Registry?
+
+GitHub Actions und GitHub Package Registry sind umsonst für öffentliche Projekte. Bei privaten und internen Projekten bieten beide Projekte jeweils ein kostenloses Nutzungskontingent an. Darüber hinausgehende Nutzung wird wie bei anderen Cloud Lösungen verbrauchsbasiert abgerechnet (pay as you go).
+
+<img width="1417" alt="Screenshot 2020-02-13 at 10 36 22" src="https://user-images.githubusercontent.com/22428305/74421298-16c9e580-4e4d-11ea-9f91-175640093c34.png">
+
+<img width="1417" alt="Screenshot 2020-02-13 at 10 35 52" src="https://user-images.githubusercontent.com/22428305/74421301-1893a900-4e4d-11ea-8e6d-3529c00f522f.png">
