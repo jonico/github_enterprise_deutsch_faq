@@ -161,7 +161,7 @@ GitHub Enterprise unterstützt [SAML](https://help.github.com/en/enterprise/2.19
 
 Aktuell sind beide Produkte für GitHub Enterprise Cloud und Github.com verfügbar. Wir planen später in 2020 die Integration in GitHub Enterprise Server.
 
-* Kann ich Jenkins Files mit GitHub Actions wiederverwenden?
+* Kann ich Jenkinsfiles mit GitHub Actions wiederverwenden?
 
 Es gibt die Möglichkeit eine [Action](https://github.com/marketplace/actions/jenkinsfile-runner-prepackaged) zu nutzen, welche ```Jenkinsfiles``` erkennt und diese mittels eines [Jenkins Single Shot Master](https://github.com/SAP/devops-docker-cx-server/tree/master/jenkinsfile-runner-github-action) innerhalb von GitHub Actions als Docker Container ausführt. Die Jenkins-Pipeline wird dabei innerhalb von Actions ausgeführt. Logs als auch Artefakte können hierbei von Actions abgegriffen und weiterverwendet werden. Dieser Ansatz ermöglicht die Wiederverwendung des bestehenden Jenkins Wissen. SAP nutzt dies bereits für sein [Cloud SDK](https://blogs.sap.com/2019/09/13/running-sap-cloud-sdk-pipeline-on-github-actions/).
 
