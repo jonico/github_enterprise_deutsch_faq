@@ -10,7 +10,7 @@ Zusammengefasst ist es möglich
 
 1. auf in GitHub gehostete Repositories weiterhin mit [SVN-Clients](https://help.github.com/articles/support-for-subversion-clients/) zuzugreifen, welches einen sanften Umstieg von Subversion-Entwicklern und CI-Tool-Chains ermöglicht. Für einen kombinierten Betrieb von Subversion und Git, empfehlen wir diesen [Blog](https://github.com/blog/1178-collaborating-on-github-with-subversion).
 
-2. SVN Repositories mittels [kostenfreien Werkzeugen](https://services.github.com/kit/downloads/subversion-migration.html) selbst zu migrieren, GitHub Enterprise bringt [Spezialwerkzeuge](https://help.github.com/en/enterprise/2.19/admin/migrations/importing-data-from-third-party-version-control-systems) mit
+2. SVN Repositories mittels [kostenfreien Werkzeugen](https://services.github.com/kit/downloads/subversion-migration.html) selbst zu migrieren, GitHub Enterprise bringt [Spezialwerkzeuge](https://help.github.com/en/enterprise/2.21/admin/migrations/importing-data-from-third-party-version-control-systems) mit
 
 3. Unsere [Professional-Services](https://services.github.com/) zur Migration zu nutzen
 
@@ -32,24 +32,24 @@ GitHub empfiehlt den Betrieb möglichst aller Software-Projekte auf einer Instan
 
 Typischerweise steht alle 3 Monate ein neues Major-Release von GitHub Enterprise zur Verfügung, welche alle neuen Funktionalitäten, die in der Zwischenzeit auf GitHub.com released wurden enthält.
 
-Bugfixes und nicht sicherheitskritische Updates werden in Form von einem Minor-Release pro zwei bis vier Wochen zur Verfügung gestellt. Sicherheitskritische Hotfixes werden sofort zur Verfügung gestellt. Die Verfügbarkeit von Updates kann bei bestehender Internetverbindung [automatisch](https://help.github.com/en/enterprise/2.19/admin/installation/enabling-automatic-update-checks), oder über unsere Web-Oberfläche geprüft werden. Ein Upgrade bezieht sich dabei immer auf das Gesamtsystem und ist innerhalb weniger Minuten abgeschlossen.
+Bugfixes und nicht sicherheitskritische Updates werden in Form von einem Minor-Release pro zwei bis vier Wochen zur Verfügung gestellt. Sicherheitskritische Hotfixes werden sofort zur Verfügung gestellt. Die Verfügbarkeit von Updates kann bei bestehender Internetverbindung [automatisch](https://help.github.com/en/enterprise/2.21/admin/installation/enabling-automatic-update-checks), oder über unsere Web-Oberfläche geprüft werden. Ein Upgrade bezieht sich dabei immer auf das Gesamtsystem und ist innerhalb weniger Minuten abgeschlossen.
 Anbei ein [Überblick über die Sicherheit von GitHub Enterprise](https://enterprise.github.com/security), sowie unser [Bug Bounty Programm](https://bounty.github.com/index.html#home).
 
 ## Rollen & Rechte
 
 * Wie funktioniert ihr Rollen- und Rechtekonzept?
 
-GitHub Enterprise bietet Lese-, Schreib- und Administrations-Rechte auf [Branch-](https://help.github.com/articles/about-branch-restrictions/), [Repository-](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) und[ Organisationsebene](https://help.github.com/en/enterprise/2.19/user/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization). Zugriff wird über Teams und Collaborators innerhalb Organisationen (vergleichbar mit Rollen) sowie [Default-Rechten](https://help.github.com/en/enterprise/2.19/user/github/setting-up-and-managing-organizations-and-teams/migrating-admin-teams-to-improved-organization-permissions) pro Organisation und [Repository-Sichtbarkeit](https://help.github.com/enterprise/admin/guides/installation/enabling-private-mode/) auf Instanzebene gesteuert. Team-Mitgliedschaften können automatisch über LDAP-Gruppen [synchronisiert](https://help.github.com/en/enterprise/2.19/admin/user-management/creating-teams#creating-teams-with-ldap-sync-enabled) werden.
+GitHub Enterprise bietet Lese-, Schreib- und Administrations-Rechte auf [Branch-](https://help.github.com/articles/about-branch-restrictions/), [Repository-](https://help.github.com/articles/managing-team-access-to-an-organization-repository/) und[ Organisationsebene](https://help.github.com/en/enterprise/2.21/user/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization). Zugriff wird über Teams und Collaborators innerhalb Organisationen (vergleichbar mit Rollen) sowie [Default-Rechten](https://help.github.com/en/enterprise/2.21/user/github/setting-up-and-managing-organizations-and-teams/migrating-admin-teams-to-improved-organization-permissions) pro Organisation und [Repository-Sichtbarkeit](https://help.github.com/enterprise/admin/guides/installation/enabling-private-mode/) auf Instanzebene gesteuert. Team-Mitgliedschaften können automatisch über LDAP-Gruppen [synchronisiert](https://help.github.com/en/enterprise/2.21/admin/user-management/creating-teams#creating-teams-with-ldap-sync-enabled) werden.
 
 Einen Überblick über die Konzepte finden Sie in diesem [Video](https://vimeo.com/179075921/a774e76f4f).
 
 * Welche Basissystem der Unternehmen können angebunden? (LDAP, Crowd, SAML)
 
-GitHub Enterprise unterstützt [SAML](https://help.github.com/enterprise/admin/guides/user-management/using-saml/), [CAS](https://help.github.com/enterprise/2.19/admin/guides/user-management/using-cas/)und [LDAP](https://help.github.com/enterprise/2.19/admin/guides/user-management/using-ldap/) als Identitätsprovider.  Für eine Schritt- für-Schritt-Anleitung für die Synchronisation zwischen LDAP und GitHub Enterprise, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4).
+GitHub Enterprise unterstützt [SAML](https://help.github.com/enterprise/admin/guides/user-management/using-saml/), [CAS](https://help.github.com/enterprise/2.21/admin/guides/user-management/using-cas/)und [LDAP](https://help.github.com/enterprise/2.21/admin/guides/user-management/using-ldap/) als Identitätsprovider.  Für eine Schritt- für-Schritt-Anleitung für die Synchronisation zwischen LDAP und GitHub Enterprise, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4).
 
 * Level der Rechte gibt es bei ihnen in Bezug auf administrativen Aufgaben (Repo anlegen, User berechtigen) und fachlichen Tätigkeiten?
 
-Einen Überblick über die Bedeutung unserer Zugriffsrechte auf Organisationsebene finden Sie [hier](https://help.github.com/articles/repository-permission-levels-for-an-organization/). Weiterhin existiert eine [Site-Admin-Weboberfläche](https://help.github.com/enterprise/2.19/admin/articles/site-admin-dashboard/) für Einstellungen, die die gesamte Instanz betreffen ([maximale Dateigrößen](https://help.github.com/en/enterprise/2.19/admin/installation/setting-git-push-limits), [globale Pre-receive-Hooks](https://help.github.com/enterprise/2.19/admin/guides/developer-workflow/managing-pre-receive-hooks-on-the-github-enterprise-appliance/), das Recht, [neue Organisationen zu erstellen](https://help.github.com/enterprise/2.19/admin/guides/user-management/preventing-users-from-creating-organizations/), etc).
+Einen Überblick über die Bedeutung unserer Zugriffsrechte auf Organisationsebene finden Sie [hier](https://help.github.com/articles/repository-permission-levels-for-an-organization/). Weiterhin existiert eine [Site-Admin-Weboberfläche](https://help.github.com/enterprise/2.21/admin/articles/site-admin-dashboard/) für Einstellungen, die die gesamte Instanz betreffen ([maximale Dateigrößen](https://help.github.com/en/enterprise/2.21/admin/installation/setting-git-push-limits), [globale Pre-receive-Hooks](https://help.github.com/enterprise/2.21/admin/guides/developer-workflow/managing-pre-receive-hooks-on-the-github-enterprise-appliance/), das Recht, [neue Organisationen zu erstellen](https://help.github.com/enterprise/2.21/admin/guides/user-management/preventing-users-from-creating-organizations/), etc).
 
 Für fachliche Tätigkeiten, insbesondere für die projektspezifische Entscheidung, wann ein Feature /Pull Request qualitativ gut genug ist, in die Produktion übernommen zu werden, dienen GitHub’s Protected Branches mit [Required Status Checks](https://github.com/blog/2051-protected-branches-and-required-status-checks). Einen sehr guten Überblick zu fachspezifischen Quality-Gates liefert dieses [Video](https://vimeo.com/183360439/e1cd516159).
 
@@ -57,7 +57,7 @@ Für fachliche Tätigkeiten, insbesondere für die projektspezifische Entscheidu
 
 * Wie arbeiten sie mit ihrem Support mit Unternehmens-Supportmodellen zusammen? (ITIL?)
 
-GitHub bietet ein [ticket-basiertes](https://enterprise.github.com/support) Support-Modell (Zendesk) an, welches Sie bereits während der Trial-Phase kostenfrei testen können. Es gibt keine Limitierung der Ticket-Anzahl und Support ist bereits in den Lizenzkosten enthalten. Alle unsere Support-Ingenieure kennen unser Produkt in- und auswendig und sind direkt bei uns angestellt. Tickets werden zumeist von derselben Person abgeschlossen, die die initiale Bearbeitung begonnen hat. Support-Ingenieure arbeiten über die gesamte Welt verteilt, davon auch mehrere in Deutschland, welche auch auf Tickets in deutscher Sprache antworten können. Bei Bedarf und gegen Aufpreis ist es möglich, einen oder mehrere designierte Support-Ingenieure zu bekommen. 
+GitHub bietet ein [ticket-basiertes](https://enterprise.github.com/support) Support-Modell (Zendesk) an, welches Sie bereits während der Trial-Phase kostenfrei testen können. Es gibt keine Limitierung der Ticket-Anzahl und Support ist bereits in den Lizenzkosten enthalten. Alle unsere Support-Ingenieure kennen unser Produkt in- und auswendig und sind direkt bei uns angestellt. Tickets werden zumeist von derselben Person abgeschlossen, die die initiale Bearbeitung begonnen hat. Support-Ingenieure arbeiten über die gesamte Welt verteilt, davon auch mehrere in Deutschland, welche auch auf Tickets in deutscher Sprache antworten können. Bei Bedarf und gegen Aufpreis ist es möglich, einen oder mehrere designierte Support-Ingenieure zu bekommen.
 
 * Welche Anforderungen haben sie an Infrastrukturbetrieb?
 
@@ -77,7 +77,7 @@ Gerne beantworten wir Ihre spezifischen Review- und Workflow-Fragen auch mit ein
 
 * Wie stellt sich die Kopplung von Reviews und Jira-Ticket dar?
 
-Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. So wurde [Git LFS](https://git-lfs.github.com/) gemeinsam von beiden Unternehmen designed, implementiert und weiterhin vorangetrieben. Weiterhin besteht eine [Jira-Integration](https://help.github.com/en/enterprise/2.19/admin/developer-workflow/managing-projects-using-jira) zu GitHub. Diese ermöglicht es
+Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. So wurde [Git LFS](https://git-lfs.github.com/) gemeinsam von beiden Unternehmen designed, implementiert und weiterhin vorangetrieben. Weiterhin besteht eine [Jira-Integration](https://help.github.com/en/enterprise/2.21/admin/developer-workflow/managing-projects-using-jira) zu GitHub. Diese ermöglicht es
 
 * Von Jira aus alle mit Jira-Issues assoziierten GitHub-Branches und Reviews (Pull-Requests) sowie deren Status, Kommentare und Diskussionsteilnehmer zu sehen.
 
@@ -85,27 +85,27 @@ Zwischen GitHub und Atlassian besteht in mehreren Bereichen eine Partnerschaft. 
 
 * Zusätzlich gibt es ein kostenfreies Chrome-Plugin [Jirafy](https://chrome.google.com/webstore/detail/jirafy/npldkpkhkmpnfhpmeoahhakbgcldplbj?hl=en) welches es ermöglicht, sämtlichen Jira-Referenzen in GitHub-Reviews, Commits, Dokumentation, Releases und Wikis zu folgen
 
-Alle drei Punkte zusammen führen zu einer bidirektionalen Integration der beiden Systeme ineinander. Für einen Überblick über die Funktionalitäten und die Konfiguration der Jira-Integration, steht Ihnen [dieses Video](https://vimeo.com/100550865) zur Verfügung. 
+Alle drei Punkte zusammen führen zu einer bidirektionalen Integration der beiden Systeme ineinander. Für einen Überblick über die Funktionalitäten und die Konfiguration der Jira-Integration, steht Ihnen [dieses Video](https://vimeo.com/100550865) zur Verfügung.
 
 * Wie kann aus externen Tools auf Reviewergebnisse zugegriffen werden? (REST)
 
-Sämtliche Daten innerhalb der GitHub-Plattform stehen Ihnen über unsere [REST-](https://developer.github.com/v3/enterprise/) und [GraphQL-API](https://developer.github.com/v4/) zur Verfügung. Alle Informationen über Code-Reviews (Pull-Requests) finden Sie über diesen [REST-Endpoint](https://developer.github.com/v3/pulls/). Da GitHub Enterprise und GitHub.com die selbe Code-Basis teilen, sind auch die APIs identisch. 
+Sämtliche Daten innerhalb der GitHub-Plattform stehen Ihnen über unsere [REST-](https://developer.github.com/v3/enterprise/) und [GraphQL-API](https://developer.github.com/v4/) zur Verfügung. Alle Informationen über Code-Reviews (Pull-Requests) finden Sie über diesen [REST-Endpoint](https://developer.github.com/v3/pulls/). Da GitHub Enterprise und GitHub.com die selbe Code-Basis teilen, sind auch die APIs identisch.
 
 * Wie sieht die Integration von Artifactory und Git per git-lfs aus?
 
 [Git LFS](https://git-lfs.github.com/) wurde gemeinsam von GitHub und Atlassian konzipiert und ist sowohl in GitHub’s Benutzeroberfläche als auch in GitHub’s Desktop Client [voll integriert](https://github.com/blog/2079-managing-large-files-with-git-lfs). Für mehr Nutzerinformationen empfehlen wir dieses [Video](https://www.youtube.com/watch?v=uLR1RNqJ1Mw).
 
-GitHub Enterprise erlaubt es, beliebig viele und beliebig große Git LFS-Dateien zur verwalten. Git LFS kann individuell pro [Repository](https://help.github.com/en/enterprise/2.19/user/github/managing-large-files/configuring-git-large-file-storage) sowie auf [Instanz-](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-your-appliance/) oder [Organisationsebene](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-every-repository-owned-by-a-user-account-or-organization/) konfiguriert werden. Bei Bedarf kann auch ein Drittanbieter wie [Artifactory](https://www.jfrog.com/confluence/display/RTF/Git+LFS+Repositories) zur Speicherung von großen Binärdateien [konfiguriert](https://help.github.com/enterprise/2.7/admin/guides/installation/git-large-file-storage-on-github-enterprise/#configuring-git-lfs-to-use-a-third-party-server) werden. Bei der Benutzung von Artefakt-Repositories ist es weiterhin möglich, die darin enthaltenen Komponenten einer Lizenz- und Sicherheitsprüfung zu unterziehen sowie das Resultat in den Pull-Request zurückzumelden, weitere Informationen finden Sie [hier](https://github.com/integrations/feature/dependency-management). 
+GitHub Enterprise erlaubt es, beliebig viele und beliebig große Git LFS-Dateien zur verwalten. Git LFS kann individuell pro [Repository](https://help.github.com/en/enterprise/2.21/user/github/managing-large-files/configuring-git-large-file-storage) sowie auf [Instanz-](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-your-appliance/) oder [Organisationsebene](https://help.github.com/enterprise/2.7/admin/articles/configuring-git-large-file-storage-for-every-repository-owned-by-a-user-account-or-organization/) konfiguriert werden. Bei Bedarf kann auch ein Drittanbieter wie [Artifactory](https://www.jfrog.com/confluence/display/RTF/Git+LFS+Repositories) zur Speicherung von großen Binärdateien [konfiguriert](https://help.github.com/enterprise/2.7/admin/guides/installation/git-large-file-storage-on-github-enterprise/#configuring-git-lfs-to-use-a-third-party-server) werden. Bei der Benutzung von Artefakt-Repositories ist es weiterhin möglich, die darin enthaltenen Komponenten einer Lizenz- und Sicherheitsprüfung zu unterziehen sowie das Resultat in den Pull-Request zurückzumelden, weitere Informationen finden Sie [hier](https://github.com/integrations/feature/dependency-management).
 
 ## Infrastruktur
 
 * Hochverfügbarkeit
 
-[Hochverfügbarkeit](https://help.github.com/en/enterprise/2.19/admin/installation/about-high-availability-configuration) ist Teil der Standardkonfiguration von GitHub Enterprise. Durch unseren Virtual Appliance-Ansatz sind sämtliche Bestandteile einer High-Availability-Lösung innerhalb weniger Minuten konfigurierbar. Das Datenreplikationsprotokoll ist spezifisch auf die zu synchronisierten Daten optimiert (transaktional), es erfordert keine weiteren Infrastruktur-Abhängigkeiten (wie NFS oder zentrale Datenbankinstanzen).
+[Hochverfügbarkeit](https://help.github.com/en/enterprise/2.21/admin/installation/about-high-availability-configuration) ist Teil der Standardkonfiguration von GitHub Enterprise. Durch unseren Virtual Appliance-Ansatz sind sämtliche Bestandteile einer High-Availability-Lösung innerhalb weniger Minuten konfigurierbar. Das Datenreplikationsprotokoll ist spezifisch auf die zu synchronisierten Daten optimiert (transaktional), es erfordert keine weiteren Infrastruktur-Abhängigkeiten (wie NFS oder zentrale Datenbankinstanzen).
 
 ![image alt text](image_1.png)
 
-Die Warm-Standby-Instanz, welche bei einem DNS- oder [Loadbalancer-Failover](https://help.github.com/en/enterprise/2.19/admin/installation/using-github-enterprise-server-with-a-load-balancer) genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
+Die Warm-Standby-Instanz, welche bei einem DNS- oder [Loadbalancer-Failover](https://help.github.com/en/enterprise/2.21/admin/installation/using-github-enterprise-server-with-a-load-balancer) genutzt wird, sollte bevorzugt in einer anderen Availability Zone stehen, jedoch idealerweise keine höhere Latenz als 1 ms zum Primär-Datenzentrum aufweisen.
 
 * Wo liegen im Cloud-Ansatz die Daten des Repos?
 
@@ -117,7 +117,7 @@ Empfehlung: Latenz < 1 ms, 40 GBit/s für angeschlossene Volumes
 
 * Wie sieht ein Backup-Konzept aus?
 
-Backup ist ein [integraler Bestandteil](https://help.github.com/en/enterprise/2.19/admin/installation/configuring-backups-on-your-appliance) unserer Lösung und kann innerhalb weniger Minuten konfiguriert werden, da alle notwendigen Programme mitgeliefert werden und durch unseren standardisierten Virtual-Appliance-Ansatz keine unnötige Komplexität entsteht. Backups können sowohl inkrementell als vollständig gemacht werden, unsere Ratschläge für ein optimales Backup-Intervall und das Sizing der Backup-Maschine finden Sie [hier](https://help.github.com/en/enterprise/2.19/admin/installation/configuring-backups-on-your-appliance#prerequisites). 
+Backup ist ein [integraler Bestandteil](https://help.github.com/en/enterprise/2.21/admin/installation/configuring-backups-on-your-appliance) unserer Lösung und kann innerhalb weniger Minuten konfiguriert werden, da alle notwendigen Programme mitgeliefert werden und durch unseren standardisierten Virtual-Appliance-Ansatz keine unnötige Komplexität entsteht. Backups können sowohl inkrementell als vollständig gemacht werden, unsere Ratschläge für ein optimales Backup-Intervall und das Sizing der Backup-Maschine finden Sie [hier](https://help.github.com/en/enterprise/2.21/admin/installation/configuring-backups-on-your-appliance#prerequisites).
 
 * Welche API's hat Github Enterprise (lesen/schreiben)?
 
@@ -127,19 +127,19 @@ GitHub stellt eine große Auswahl an [REST APIs](https://developer.github.com/v3
 
 ![image alt text](image_2.jpg)
 
-GitHub Enterprise wird als [Virtual Appliance](https://help.github.com/en/enterprise/2.19/admin/installation/system-overview) zur Verfügung gestellt, die auf AWS, Azure sowie VMWare, OpenStack KVM, Hyper-V, XenServer gehostet werden kann. Sämtliche Bestandteile unserer Plattform sind innerhalb der virtuellen Maschine realisiert, es gibt keine externen Abhängigkeiten (außer über den Hypervisor angeschlossene Volumes).
+GitHub Enterprise wird als [Virtual Appliance](https://help.github.com/en/enterprise/2.21/admin/installation/system-overview) zur Verfügung gestellt, die auf AWS, Azure sowie VMWare, OpenStack KVM, Hyper-V, XenServer gehostet werden kann. Sämtliche Bestandteile unserer Plattform sind innerhalb der virtuellen Maschine realisiert, es gibt keine externen Abhängigkeiten (außer über den Hypervisor angeschlossene Volumes).
 
-Eine einzelne virtuelle Maschine kann mit den Standardeinstellungen bis zu 5000 Nutzer unterstützen (solange CI-Systeme über web hooks angeschlossen sind und [adäquate](https://help.github.com/en/enterprise/2.19/admin/installation/installing-github-enterprise-server-on-vmware#hardware-considerations) Hardware benutzt wird). Eine Übersicht der Hardware Anforderungen je nach verwendetem Hypervisor/Cloud Provider finden Sie [hier](https://help.github.com/en/enterprise/2.19/admin/installation/setting-up-a-github-enterprise-server-instance).
+Eine einzelne virtuelle Maschine kann mit den Standardeinstellungen bis zu 5000 Nutzer unterstützen (solange CI-Systeme über web hooks angeschlossen sind und [adäquate](https://help.github.com/en/enterprise/2.21/admin/installation/installing-github-enterprise-server-on-vmware#hardware-considerations) Hardware benutzt wird). Eine Übersicht der Hardware Anforderungen je nach verwendetem Hypervisor/Cloud Provider finden Sie [hier](https://help.github.com/en/enterprise/2.21/admin/installation/setting-up-a-github-enterprise-server-instance).
 
 ![image alt text](image_3.png)
 
-Über 5000 Nutzer hinaus unterstützt GitHub Enterprise [Clustering](https://help.github.com/en/enterprise/2.19/admin/clustering/about-clustering) für alle Systemkomponenten (Git, Web interface, pages, search). Clustering ist mit den Standardlizenzkosten bereits abgegolten und kann dann konfiguriert werden, wenn die tatsächliche Notwendigkeit entsteht (keine Vorabplanung bei der initialen Installation nötig).
+Über 5000 Nutzer hinaus unterstützt GitHub Enterprise [Clustering](https://help.github.com/en/enterprise/2.21/admin/clustering/about-clustering) für alle Systemkomponenten (Git, Web interface, pages, search). Clustering ist mit den Standardlizenzkosten bereits abgegolten und kann dann konfiguriert werden, wenn die tatsächliche Notwendigkeit entsteht (keine Vorabplanung bei der initialen Installation nötig).
 
 ## Integration in Unternehmens-Infrastruktur
 
 * Wie erfolgt die Qualitätssicherung neuer Releases im Unternehmensumfeld beim Kunden?
 
-Bevor ein neues Software-Release von GitHub Enterprise beim Kunden landet, hat es bereits drei Monate Tests durch über 50 Millionen-Softwareentwickler pro Monat hinter sich. Neben dieser Feuerprobe nutzt GitHub modernste Software-Entwicklungspraktiken inklusive Unit-Testing, Regressions-Testing, Security-Testing und Performance-Testing für jede einzelne Änderung (wir haben 500 Deployments pro Woche auf GitHub.com). Weiterhin gibt unser technischer Support sämtliche Fehler-Reports unserer Kunden unverzüglich an unser Engineering-Team weiter, welches diese zunächst auf GitHub.com und dann in der nächsten GitHub Enterprise-Version (spätestens drei Monate später, bei kritischen Problemen gibt es ein zeitnahes Patch-Release) behebt. 
+Bevor ein neues Software-Release von GitHub Enterprise beim Kunden landet, hat es bereits drei Monate Tests durch über 50 Millionen-Softwareentwickler pro Monat hinter sich. Neben dieser Feuerprobe nutzt GitHub modernste Software-Entwicklungspraktiken inklusive Unit-Testing, Regressions-Testing, Security-Testing und Performance-Testing für jede einzelne Änderung (wir haben 500 Deployments pro Woche auf GitHub.com). Weiterhin gibt unser technischer Support sämtliche Fehler-Reports unserer Kunden unverzüglich an unser Engineering-Team weiter, welches diese zunächst auf GitHub.com und dann in der nächsten GitHub Enterprise-Version (spätestens drei Monate später, bei kritischen Problemen gibt es ein zeitnahes Patch-Release) behebt.
 
 * Wie geht man damit um, wenn sich auch Schnittstellen (Bsp.: Jira, Jenkins) ändern?
 
@@ -147,7 +147,7 @@ Mit über 50 Millionen Software-Entwicklern, die GitHub monatlich nutzen, ist un
 
 * Wie integriert sie Github in SSO Lösungen von Unternehmen (LDAP, Siteminder, NTLM)
 
-GitHub Enterprise unterstützt [SAML](https://help.github.com/en/enterprise/2.19/admin/user-management/using-saml) (Siteminder), [CAS](https://help.github.com/en/enterprise/2.19/admin/user-management/using-cas)[ ](https://help.github.com/en/enterprise/2.19/admin/user-management/using-cas)und [LDAP](https://help.github.com/en/enterprise/2.19/admin/user-management/using-ldap) als Identitätsprovider.  Für eine LDAP-Synch-Schritt- für-Schritt-Anleitung, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4). Zusätzlich steht eine Synchronisation zwischen LDAP-Zweigen und GitHub-Teammitgliedschaften zur [Verfügung](https://www.youtube.com/watch?v=qxdjGpQjS_g).
+GitHub Enterprise unterstützt [SAML](https://help.github.com/en/enterprise/2.21/admin/user-management/using-saml) (Siteminder), [CAS](https://help.github.com/en/enterprise/2.21/admin/user-management/using-cas)[ ](https://help.github.com/en/enterprise/2.21/admin/user-management/using-cas)und [LDAP](https://help.github.com/en/enterprise/2.21/admin/user-management/using-ldap) als Identitätsprovider.  Für eine LDAP-Synch-Schritt- für-Schritt-Anleitung, folgen Sie diesem [Video](https://www.youtube.com/watch?v=Ecjjbe_4md4). Zusätzlich steht eine Synchronisation zwischen LDAP-Zweigen und GitHub-Teammitgliedschaften zur [Verfügung](https://www.youtube.com/watch?v=qxdjGpQjS_g).
 
 ## GitHub Actions und GitHub Package Registry
 
